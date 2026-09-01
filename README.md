@@ -102,11 +102,9 @@ skills/
 agents/
   messaging-agent.md          preloads messaging-report
   seo-agent.md                preloads seo-report
-examples/
-  miden-expert.md             filled-in company.md example
 ```
 
-The plugin ships no directory named `context/`. That name means exactly one thing — live, per-site context, read in full by the report agents — so templates and examples deliberately live elsewhere.
+The plugin ships no directory named `context/`. That name means exactly one thing — live, per-site context, read in full by the report agents — so the templates deliberately live under the skill that owns them.
 
 Per audited site, in that site's working directory:
 
