@@ -16,19 +16,30 @@ python3 -m playwright install chromium
 
 ## Install
 
-Try it without installing:
+In Claude Code, add this repo as a plugin marketplace, then install the plugin from it:
 
-```bash
-claude --plugin-dir /path/to/audit-website
+```
+/plugin marketplace add breba-apps/website-audit
+/plugin install audit-website@breba-tools
 ```
 
-Install it permanently by adding the directory as a marketplace, or by dropping it in your skills directory so it auto-loads:
+The first line points at the repository; the second installs the plugin by name from the `breba-tools` marketplace it contains. Pin to a tag if you want a fixed version:
 
-```bash
-cp -R /path/to/audit-website ~/.claude/skills/
+```
+/plugin marketplace add breba-apps/website-audit@v1.1.0
 ```
 
-Either way the plugin loads as a unit — the three skills and two agents travel together, and nothing depends on where they sit relative to each other.
+Update later with `/plugin update audit-website@breba-tools`.
+
+### Local development
+
+To run a working copy without installing:
+
+```bash
+claude --plugin-dir /path/to/website-audit
+```
+
+Either way the plugin loads as a unit — the four skills and two agents travel together, and nothing depends on where they sit relative to each other.
 
 ## Use
 
