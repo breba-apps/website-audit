@@ -1,0 +1,8 @@
+# Audit output — regenerated per run, and large
+assets/
+__pycache__/
+.DS_Store
+.idea/
+
+# Local test runs, including captured site context
+testruns/

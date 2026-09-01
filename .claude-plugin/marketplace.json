@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "breba-tools",
+  "owner": {
+    "name": "Yason Khaburzaniya",
+    "url": "https://github.com/breba-apps"
+  },
+  "description": "Website auditing tools for Claude Code.",
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "name": "audit-website",
+      "source": "./",
+      "description": "Audits any website locally: captures screenshots and SEO data, runs a messaging audit and a technical SEO report in parallel, and links them from a single index.html. Learns from your feedback between runs.",
+      "version": "1.1.0",
+      "author": {
+        "name": "Yason Khaburzaniya"
+      }
+    }
+  ]
+}

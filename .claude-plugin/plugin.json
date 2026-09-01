@@ -1,0 +1,9 @@
+{
+  "name": "audit-website",
+  "displayName": "Website Audit",
+  "description": "Audits any website locally: captures screenshots and SEO data for a list of URLs, then runs a messaging audit and a technical SEO report in parallel and links them from a single index.html. Site-specific knowledge lives in an editable per-site context directory, which the plugin updates from your feedback so successive audits improve.",
+  "version": "1.1.0",
+  "author": {
+    "name": "Yason Khaburzaniya"
+  }
+}
